@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-// Class Schema
+// Class 
 var ClassSchema = mongoose.Schema({
 	title: {
 		type: String
@@ -18,7 +18,7 @@ var ClassSchema = mongoose.Schema({
 	}]
 });
 
-var Class = module.exports = mongoose.model('Class', ClassSchema);
+var Class = module.exports = mongoose.model('Class', ClassSchema)
 
 // Fetch All Classes
 module.exports.getClasses = function(callback, limit){
